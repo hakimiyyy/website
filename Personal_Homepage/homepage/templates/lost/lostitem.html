@@ -1,0 +1,419 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+       /*COPYING FROM MAINPAGE---------------------*/
+       body{
+			background: #ea5858;
+			font-family: poppins;
+			margin: 0;
+		}
+		/*'.' for class*/
+
+		nav{
+			height: 60px;
+			width: auto;
+			background: #ff4343;
+		}
+		.drop{
+			padding-top: 10px;
+      padding-bottom: 10px;
+		}
+		nav ul{
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			position: absolute; top: 15px; left: 450px;
+
+		}
+		nav ul li{
+			position: relative;
+			list-style: none;
+			display: inline-block;
+		}
+		nav ul li a{
+			display: block;
+			padding: 0 15px;
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			line-height: 60px;
+			font-size: 20px; 
+		}
+		nav ul li a:hover{
+			background: rgb(212, 90, 90);
+            color: rgb(152, 63, 4);
+		}
+
+        nav ul li .active{
+			background: rgb(238, 195, 110);
+            color: rgb(152, 63, 4);
+		}
+
+		/*hide child menu list*/
+		nav ul ul{
+			position: absolute;
+			top: 60 px;
+			display: none;
+		}
+
+		/*display the child menu list*/
+		nav ul li:hover > ul{
+			display: block;
+		}
+
+		nav ul ul li{
+			width: 150px;
+			float: none;
+			display: list-item;
+			position: relative;
+		}
+
+		nav ul ul ul li{
+			position: relative;
+			top: -60px;
+			left: 150px;
+		}
+
+        a{
+            color: #010101;
+        }
+
+		.logo{
+			position: absolute; left: 50px; top: 1x;
+			height: auto;
+			width: auto;
+			font-size: 60px;
+			font-family: dancing script;
+			font: #ffffff;
+			text-decoration: none;
+		}
+		
+
+		 a.logo:hover{
+			color: rgb(255, 255, 255);
+
+		 }
+		#box{
+			width: 100;
+			height: 100;
+			padding: 10px 10px;
+		}
+
+        /*=============
+            Scroll
+        ===============*/
+
+         /* width */
+         ::-webkit-scrollbar {
+            width: 20px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background:  #a06404; 
+            border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+            background: #a06404; 
+        }
+        /*=============
+            box
+        ===============*/
+
+        #myBtn {
+            color: #ffffff;
+            background-color: #ffffff;
+            font-family: Garamond, serif;
+            padding: 5px 30px;
+            font-size: 20px;  
+            cursor: pointer;         
+            border-radius: 5px;
+            box-shadow: 0 3px #999;
+        }
+        #myBtn:hover{ 
+            background-color: #feebd6;
+        }
+        span{
+            color: #f6f5fb;
+            font-family: Garamond, serif;
+            font-size: 25px;
+        }    
+        img{
+            width: 200px;
+            height: 140px;
+        }
+        /*=============
+            footer
+        ===============*/
+         span.footerlogo{
+            color: white;
+            font-family: Garamond, serif;
+         }
+
+         footer{
+            background:  #e3b076 ;
+            border: double 5px #cc9c66;
+            padding: 5px 50px;
+         }
+
+         /* Full-width input fields */
+            input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            }
+
+        .container {
+        margin: 1em auto; 
+        padding:30px;
+        border-radius:5px;
+        background-color:#a82f2f;
+        color: #faf4e3;
+        width: 950px;
+        margin: 10px auto;
+        box-shadow: #c5945c;
+        border: double 5px black;
+        padding: 10px 50px;
+        font-size: 15px;
+        text-align: justify;
+        }
+        .productcont {
+        display:grid; 
+        grid-template-columns: auto auto auto auto;
+        }
+        .product {
+        padding:1em; 
+        border:1px solid #ffffff; 
+        margin-right:1em; 
+        margin-bottom: 1em;
+        margin-top: 1em;
+        border-radius:5px;
+        }
+        .cart-container {
+        border:1px solid #ffffff;
+        border-radius:5px;
+        margin-top:1em;
+        padding:2em;
+        }
+        button, input[type="submit"] { 
+            border:1px solid #FA6900; 
+            color:#fff; 
+            background: #F38630; 
+            padding:0.6em 1em;
+            font-size:1em; 
+            line-height:1; 
+            border-radius: 1.2em;
+            transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+            background: #b06904;
+            border-color:#e9c24d8b;
+            color:#000;
+            cursor: pointer;
+        }
+        table {
+        margin-bottom:1em;
+        border-collapse:collapse;
+        }
+        table td, table th {
+        text-align:left;
+        padding:0.25em 1em;
+        border-bottom:1px solid #ffffff;
+        }
+        #carttotals {
+        margin-right:0;
+        margin-left:auto;
+        }
+        .cart-buttons {
+        width:auto;
+        margin-right:0;
+        margin-left:auto;
+        display:flex;
+        justify-content:flex-end;
+        padding:1em 0;
+        }
+        #emptycart {
+        margin-right:1em;
+        }
+        table td:nth-last-child(1) {
+        text-align:right;
+        }
+        .message {
+            border-width: 1px 0px;
+            border-style:solid;
+            border-color:#5c4203;
+            color:#764f13;
+            padding:0.5em 0;
+            margin:1em 0;
+            }
+
+</style>
+</head>
+
+<body>
+<!---NAVIGATION BAR--->
+<div class="drop">
+    <nav>
+        <a href="{%url 'lostandfound' %}" class="logo">Lost and Found</a>
+
+
+        <ul>
+            <li><a href="{%url 'log_in' %}">LOG IN</a></li>
+            <li><a href="{%url 'signup' %}">REGISTER</a></li>
+            <li><a href="{%url 'reporteditems' %}">REPORTED ITEMS</a></li>
+            <li><a href="{%url 'profile' %}">PROFILE</a></li>
+            <li><a href="{%url 'inputitem' %}">REPORT ITEM</a></li>
+        </ul>
+        <i><a href="{%url 'profile' %}" class="fas fa-user fa-3x" style="padding-left: 1300px; padding-top: 6px;"></a></i>	
+    </nav>	
+    </div>  
+
+    <div class="container"> 
+        <div id="alerts"></div>
+            <div class="productcont">
+
+                <div class="product">
+                    <h3 class="productname">Iphone XR</h3>
+                    <div class="img">
+                    <img src="https://oyster.ignimgs.com/wordpress/stg.ign.com/2018/11/iphone-xr-3.jpg">
+                    </div>
+                    <div class="cart-buttons">  
+                        <button onclick="myFunction()" id="checkout">Claim</button>
+    
+                       
+                    </div> 
+                </div>
+
+
+                <div class="product">
+                    <h3 class="productname">Portable fan</h3>
+                    <div class="img">
+                        <img src="https://www.shopz.com.bd/wp-content/uploads/2021/03/Solove-Xiaomi-N9-Mini-Portable-Usb-Fan.jpg">
+                    </div>
+                    <div class="cart-buttons">  
+                        <button onclick="myFunction()" id="checkout">Claim</button>
+    
+                       
+                    </div> 
+                </div>
+
+                <div class="product">
+                    <h3 class="productname">Glasses</h3>
+                    <div class="img">
+                        <img src="https://www.readers.com/images/D/REA-Perkins-Case-Black.JPG">
+                    </div>
+                    <div class="cart-buttons">  
+                        <button onclick="myFunction()" id="checkout">Claim</button>
+    
+                       
+                    </div> 
+                </div>
+                
+
+                <div class="product">
+                    <h3 class="productname">Sony Earbuds</h3>
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNBc8VN7z2rAO-_TZ-6rEqbvyZ581Uq9Wfx5an9Krb7pLpX7w10KPFWLXkOhdFc5TqajY&usqp=CAU">
+                    </div>
+                    <div class="cart-buttons">  
+                        <button onclick="myFunction()" id="checkout">Claim</button>
+    
+                       
+                    </div> 
+                </div>
+
+                <div class="product">
+                    <h3 class="productname">Laptop</h3>
+                    <div class="img">
+                        <img src="https://cdn.thewirecutter.com/wp-content/media/2022/04/cheap-gaming-laptop-2048px-9124-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024">
+                    </div>
+                    <div class="cart-buttons">  
+                        <button onclick="myFunction()" id="checkout">Claim</button>
+    
+                       
+                    </div> 
+                </div>
+
+
+            <div class="product">
+                <h3 class="productname">Logitech Mouse</h3>
+                <div class="img">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6512/6512118cv11d.jpg">
+                </div>
+                <div class="cart-buttons">  
+                    <button onclick="myFunction()" id="checkout">Claim</button>
+
+                   
+                </div> 
+            </div>
+
+
+                <div class="cart-container">
+                    <table>
+                        <thead>
+                        <tr>
+                        <th><strong>Message:</strong></th>
+                        </tr>
+                        </thead>
+                        <tbody id="carttable">
+                        </tbody>
+                    </table>
+
+
+                <div class="cart-buttons">  
+
+                   
+                </div> 
+                 <p id="demo"></p>
+                </div>
+          
+        </div>
+        
+
+    </div>
+
+    
+    <script>
+    function myFunction() {
+      var txt;
+      if (confirm("Are you sure you want to claim this item?")) {
+        txt = "You can now go and claim the item";
+      } else {
+        txt = "You cannot claim the item";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+    </script>
+
+<script>
+
+
+</script>
+</body>
+</html>
